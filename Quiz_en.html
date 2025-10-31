@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/quiz.css">
+
+    <title>Quiz - The Rise of Electronics</title>
+</head>
+
+<body>
+    <div id="sidebar" class="sidebar">
+    <button id="close-btn" class="close-btn">&times;</button>
+    
+    <h2>History of Electronics</h2>
+    <nav class="menu-links">
+        <a href="./index_en.html">Home Page</a> 
+        <a href="./linhadotempo_en.html">Timeline</a>
+        <a href="./Autores_en.html">Authors Page</a>
+        <a href="./CapaLivro_en.html">Book Cover Recreation</a>
+        <a href="./Quiz_en.html" class="active">Quiz</a>
+
+        <a href="#" id="lang-toggle-btn" class="lang-toggle-btn">
+            <span class="lang-icon-symbol">&#x1F310;</span> 
+            <span id="lang-text">Portuguese Version</span>
+        </a>
+    </nav>
+
+    <h2>Periods and Topics</h2>
+
+    <div class="accordion-item">
+        <button class="accordion-button tp1" data-periodo="periodo1">
+            1880s: Pioneer Era <span class="badge">2 topics</span>
+        </button>
+        <ul class="topicos-menu accordion-content" id="periodo1">
+            <li><a href="./assets/topicos/burroughs_en.html"><span class="ano1">1886</span> Burroughs</a></li>
+            <li><a href="./assets/topicos/telautograph_en.html"><span class="ano1">1888</span> Telautograph</a></li>
+        </ul>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-button tp2" data-periodo="periodo2">
+            1890s: Electromechanical Revolution <span class="badge">3 topics</span>
+        </button>
+        <ul class="topicos-menu accordion-content" id="periodo2">
+            <li><a href="./assets/topicos/calculadorasnalógicas_en.html"><span class="ano2">1893</span> Torres' Analog Calculators</a></li>
+            <li><a href="./assets/topicos/monitorcrt_en.html"><span class="ano2">1897</span> The CRT Monitor</a></li>
+            <li><a href="./assets/topicos/telegraphone_en.html"><span class="ano2">1898</span> Telegraphone</a></li>
+        </ul>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-button tp3" data-periodo="periodo3">
+            1900s: Electronic Foundations <span class="badge">3 topics</span>
+        </button>
+        <ul class="topicos-menu accordion-content" id="periodo3">
+            <li><a href="./assets/topicos/maquinaanalitica_en.html"><span class="ano3">1903</span> Ludgate's Analytical Engine</a></li>
+            <li><a href="./assets/topicos/valvuladiodo_en.html"><span class="ano3">1904</span> Fleming's Diode Valve</a></li>
+            <li><a href="./assets/topicos/lcd_en.html"><span class="ano3">1904</span> Liquid Crystal (LCD)</a></li>
+        </ul>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-button tp4" data-periodo="periodo4">
+            1910s: Automation Era <span class="badge">3 topics</span>
+        </button>
+        <ul class="topicos-menu accordion-content" id="periodo4">
+            <li><a href="./assets/topicos/ctr_en.html"><span class="ano4">1911</span> CTR Company</a></li>
+            <li><a href="./assets/topicos/torresyquevedo_en.html"><span class="ano4">1913</span> Torres y Quevedo's Analytical Machine</a></li>
+             <li><a href="./assets/topicos/flipflop_en.html"><span class="ano4">1918</span> Flip-Flop</a></li>
+        </ul>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-button tp5" data-periodo="periodo5">
+            1920s: Technology Corporations <span class="badge">1 topic</span>
+        </button>
+        <ul class="topicos-menu accordion-content" id="periodo5">
+            <li><a href="./assets/topicos/ibm_en.html"><span class="ano5">1924</span> IBM</a></li>
+        </ul>
+    </div>
+
+</div>
+
+    <header>
+<nav class="nav-header">
+    
+    <div>
+        <div id="menu-btn" class="menu-btn">&#9776;</div>
+    </div>
+    
+    <a href="./index_en.html" class="logo-link">
+        <img id="lampLogo" src="./assets/images/logo.png" alt="Logo" class="logo">
+        <div class="titulo-site">
+            <div class="nome">Electrogenesis</div>
+            <div class="sub-titulo">The birth of the electronic era</div>
+        </div>
+    </a>
+    
+<button id="dark-mode-toggle" class="dark-mode-toggle">
+    <img src="./assets/images/sol.png" alt="Light Mode - Sun" class="toggle-icon-img sun-img">
+    
+    <img src="./assets/images/lua.png" alt="Dark Mode - Moon" class="toggle-icon-img moon-img">
+    
+    <div class="toggle-ball"></div>
+</button>
+</nav>
+    </header>
+
+    <main class="quiz-container">
+        <div class="container">
+            <h1 class="quiz-title">Quiz: History of Electronics</h1>
+            <p class="quiz-subtitle">Test your knowledge about the historical milestones of electronics</p>
+            
+            <div id="quiz-intro" class="quiz-intro">
+                <div class="intro-card">
+                    <h2>Welcome to the Quiz!</h2>
+                    <p>This quiz contains 10 questions about the main events and inventions in the history of electronics, based on the content of our website.</p>
+                    <p>You will have 30 seconds to answer each question. The quiz advances automatically after your answer.</p>
+                    <button id="start-quiz" class="btn-start">Start Quiz</button>
+                </div>
+            </div>
+            
+            <div id="quiz-content" class="quiz-content" style="display: none;">
+                <div class="quiz-header">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div id="progress-fill" class="progress-fill"></div>
+                        </div>
+                        <span id="question-counter">Question 1/10</span>
+                    </div>
+                    <div class="quiz-timer">
+                        <span id="timer">30</span>s
+                    </div>
+                </div>
+                
+                <div class="question-container">
+                    <h2 id="question-text" class="question-text"></h2>
+                    <div id="options-container" class="options-container">
+                        <!-- Options will be inserted here by JavaScript -->
+                    </div>
+                </div>
+                
+                <!-- Navigation buttons removed -->
+            </div>
+            
+            <div id="quiz-results" class="quiz-results" style="display: none;">
+                <div class="results-card">
+                    <h2>Quiz Results</h2>
+                    <div class="score-container">
+                        <div class="score-circle">
+                            <span id="score-percentage">0%</span>
+                        </div>
+                        <p id="score-text" class="score-text">You got <span id="correct-answers">0</span> out of 10 questions right</p>
+                    </div>
+                    <div class="results-feedback">
+                        <p id="feedback-message"></p>
+                    </div>
+                    
+                    <!-- Questions review section -->
+                    <div id="questions-review" class="questions-review">
+                        <h3>Questions Review</h3>
+                        <div id="review-container" class="review-container">
+                            <!-- Questions will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="results-actions">
+                        <button id="restart-quiz" class="btn-restart">Try Again</button>
+                        <a href="./index_en.html" class="btn-home">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="autores">
+            <p><strong>Developed by:</strong></p>
+            <p>
+                Gabriel Ferreira Silva —
+                <a class="links-mail" href="mailto:gabriel.silva3953@etec.sp.gov.br">gabriel.silva3953@etec.sp.gov.br</a>
+            </p>
+            <p>
+                Giovanni Oliveira Carvalho —
+                <a href="mailto:giovanni.carvalho3@etec.sp.gov.br">giovanni.carvalho3@etec.sp.gov.br</a>
+            </p>
+            <p>
+                Matheus Arakaki do Nascimento —
+                <a href="mailto:matheus.nascimento253@etec.sp.gov.br">matheus.nascimento253@etec.sp.gov.br</a>
+            </p>
+            <p>
+                Ulisses Ismael da Silva —
+                <a href="mailto:ulisses.silva15@etec.sp.gov.br">ulisses.silva15@etec.sp.gov.br</a>
+            </p>
+        </div>
+
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/eletrogenese.2025/" target="_blank">
+                <img src="./assets/images/Instagram_img.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank">
+                <img src="./assets/images/Linkedin_img.png" alt="LinkedIn">
+            </a>
+            <a href="https://web.facebook.com/profile.php?id=61582767407768" target="_blank">
+                <img src="./assets/images/Facebook_img.png" alt="Facebook">
+            </a>
+        </div>
+
+        <hr>
+
+        <div class="copy">
+            <p>© 2025 All rights reserved.</p>
+            <p>Alameda Nothmann, 598 - Campos Elíseos, São Paulo - SP, 01216-000</p>
+        </div>
+    </footer>
+
+    <!-- ACCESSIBILITY BUTTON -->
+<button id="accessibility-btn"><img class="botaocerto" src="./assets/images/acessibilidade.png"></button>
+
+<div id="accessibility-menu">
+  <button id="increase-font">Increase Font</button>
+  <button id="decrease-font">Decrease Font</button>
+  <hr>
+  <button id="align-left">Align Left</button>
+  <button id="align-center">Center</button>
+  <button id="align-justify">Justify</button>
+  <button id="align-right">Right</button>
+  <hr>
+  <button id="reset-accessibility">Reset</button>
+</div>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/Quiz_en.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

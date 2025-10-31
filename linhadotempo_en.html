@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Computing Timeline</title>
+<link rel="stylesheet" href="./assets/css/linhadotempo.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div id="sidebar" class="sidebar">
+    <button id="close-btn" class="close-btn">&times;</button>
+    
+    <h2>History of Electronics</h2>
+    
+    <nav class="menu-links">
+        <a href="./index_en.html">Home Page</a> 
+        <a href="./linhadotempo_en.html">Timeline</a>        
+        <a href="./Autores_en.html">Authors Page</a>
+        <a href="./Quiz_en.html">Quiz</a>
+
+            <a href="#" id="lang-toggle-btn" class="lang-toggle-btn">
+            <span id="lang-text">English Version</span>
+        </a>
+    </nav>
+
+    <h2>Periods and Topics</h2>
+
+    <div class="accordion-item">
+        <button class="accordion-button tp1" data-periodo="periodo1">
+            1880s: Era of Pioneers <span class="badge">2 topics</span>
+        </button>
+        <ul class="topicos-menu accordion-content" id="periodo1">
+            <li><a href="./assets/topicos/burroughs_en.html"><span class="ano1">1886</span> Burroughs</a></li>
+            <li><a href="./assets/topicos/telautograph_en.html"><span class="ano1">1888</span> Telautograph</a></li>
+        </ul>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-button tp2" data-periodo="periodo2">
+            1890s: Electromechanical Revolution <span class="badge">3 topics</span>
+        </button>
+        <ul class="topicos-menu accordion-content" id="periodo2">
+            <li><a href="./assets/topicos/calculadorasnalógicas_en.html"><span class="ano2">1893</span> Torres' Analog Calculators</a></li>
+            <li><a href="./assets/topicos/monitorcrt_en.html"><span class="ano2">1897</span> The CRT Monitor</a></li>
+            <li><a href="./assets/topicos/telegraphone_en.html"><span class="ano2">1898</span> Telegraphone</a></li>
+        </ul>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-button tp3" data-periodo="periodo3">
+            1900s: Electronic Foundations <span class="badge">4 topics</span>
+        </button>
+        <ul class="topicos-menu accordion-content" id="periodo3">
+            <li><a href="./assets/topicos/maquinaanalitica_en.html"><span class="ano3">1903</span> Ludgate's Analytical Engine</a></li>
+            <li><a href="./assets/topicos/valvuladiodo_en.html"><span class="ano3">1904</span> Fleming's Diode Valve</a></li>
+            <li><a href="./assets/topicos/lcd_en.html"><span class="ano3">1904</span> Liquid Crystal (LCD)</a></li>
+        </ul>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-button tp4" data-periodo="periodo4">
+            1910s: Era of Automation <span class="badge">3 topics</span>
+        </button>
+        <ul class="topicos-menu accordion-content" id="periodo4">
+            <li><a href="./assets/topicos/ctr_en.html"><span class="ano4">1911</span> CTR Company</a></li>
+            <li><a href="./assets/topicos/torresyquevedo_en.html"><span class="ano4">1913</span> Torres y Quevedo's Analytical Engine</a></li>
+             <li><a href="./assets/topicos/flipflop_en.html"><span class="ano4">1918</span> Flip-Flop</a></li>
+        </ul>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-button tp5" data-periodo="periodo5">
+            1920s: Technological Corporations <span class="badge">1 topic</span>
+        </button>
+        <ul class="topicos-menu accordion-content" id="periodo5">
+            <li><a href="./assets/topicos/ibm_en.html"><span class="ano5">1924</span> IBM</a></li>
+        </ul>
+    </div>
+
+</div>
+<header>
+        <nav class="nav-header">
+            <div id="menu-btn" class="menu-btn">&#9776;</div>
+
+            <a href="./index_en.html" class="logo-link">
+                <img src="./assets/images/logo.png" alt="Logo" class="logo">
+                <div class="titulo-site">
+                    <div class="nome">Electrogenesis</div>
+                    <div class="sub-titulo">The birth of the electronic age</div>
+                </div>
+            </a>
+            <button id="dark-mode-toggle" class="dark-mode-toggle">
+    <img src="./assets/images/sol.png" alt="Modo Claro - Sol" class="toggle-icon-img sun-img">
+    
+    <img src="./assets/images/lua.png" alt="Modo Escuro - Lua" class="toggle-icon-img moon-img">
+    
+    <div class="toggle-ball"></div>
+</button>
+        </nav>
+    </header>
+
+    <br>
+  <div class="timeline">
+
+    <div class="decade"><span>1880s</span></div>
+
+    <div class="event left gold">
+      <small>1886</small>
+      <h3>Burroughs</h3>
+      <p>William Seward Burroughs developed the first commercially successful mechanical calculator.</p>
+    </div>
+
+    <div class="event right gold">
+      <small>1888</small>
+      <h3>Telautograph</h3>
+      <p>One of the first facsimile devices, allowing the transmission of handwriting over distance.</p>
+    </div>
+
+    <div class="decade"><span>1890s</span></div>
+
+    <div class="event left gold">
+      <small>1893</small>
+      <h3>Analog Calculators</h3>
+      <p>Leonardo Torres y Quevedo developed analog calculators for complex computations.</p>
+    </div>
+
+    <div class="event left gold">
+      <small>1897</small>
+      <h3>The CRT Monitor</h3>
+      <p>Karl Ferdinand Braun invented the cathode-ray tube (CRT), the basis of monitors and TVs.</p>
+    </div>
+
+    <div class="event right gold">
+      <small>1898</small>
+      <h3>Telegraphone</h3>
+      <p>Valdemar Poulsen invented the Telegraphone, the first practical magnetic recorder.</p>
+    </div>
+
+    <div class="decade"><span>1900s</span></div>
+
+    <div class="event left yellow">
+      <small>1903</small>
+      <h3>Percy Ludgate's Analytical Engine</h3>
+      <p>Percy Ludgate designed a more compact and efficient analytical engine.</p>
+    </div>
+
+    <div class="event left yellow">
+      <small>1904</small>
+      <h3>Liquid Crystal (LCD)</h3>
+      <p>Friedrich Reinitzer discovered liquid crystals, the basis for future LCD screens.</p>
+    </div>
+
+    <div class="event right yellow">
+      <small>1904</small>
+      <h3>John Fleming's Diode Valve</h3>
+      <p>John Fleming created the first solid-state electronic device (diode).</p>
+    </div>
+
+    <div class="decade"><span>1910s</span></div>
+
+    <div class="event right orange">
+      <small>1911</small>
+      <h3>CTR: Computing-Tabulating-Recording Company</h3>
+      <p>The merger of technology companies gave rise to CTR, the predecessor of IBM.</p>
+    </div>
+
+    <div class="event left orange">
+      <small>1913</small>
+      <h3>Torres y Quevedo's Analytical Engine</h3>
+      <p>Torres y Quevedo developed an advanced electromechanical analytical engine.</p>
+    </div>
+
+    <div class="event right orange">
+      <small>1918</small>
+      <h3>Flip-Flop</h3>
+      <p>William Eccles and F.W. Jordan invented the flip-flop circuit, the basis of digital electronics.</p>
+    </div>
+
+    <div class="decade"><span>1920s</span></div>
+
+    <div class="event left purple">
+      <small>1924</small>
+      <h3>IBM</h3>
+      <p>CTR was renamed International Business Machines (IBM), marking the beginning of an era.</p>
+    </div>
+
+    <div class="summary">
+      <div class="summary-card gold">
+        <h4>1880s</h4>
+        <p>2 inventions</p>
+      </div>
+      <div class="summary-card gold">
+        <h4>1890s</h4>
+        <p>3 inventions</p>
+      </div>
+      <div class="summary-card yellow">
+        <h4>1900s</h4>
+        <p>3 inventions</p>
+      </div>
+      <div class="summary-card orange">
+        <h4>1910s</h4>
+        <p>3 inventions</p>
+      </div>
+      <div class="summary-card purple-card">
+        <h4>1920s</h4>
+        <p>1 invention</p>
+      </div>
+    </div>
+
+  </div>
+    <footer>
+        <div class="autores">
+            <p><strong>Desenvolvido por:</strong></p>
+            <p>
+                Gabriel Ferreira Silva —
+                <a href="mailto:gabriel.silva3953@etec.sp.gov.br">gabriel.silva3953@etec.sp.gov.br</a>
+            </p>
+            <p>
+                Giovanni Oliveira Carvalho —
+                <a href="mailto:giovanni.carvalho3@etec.sp.gov.br">giovanni.carvalho3@etec.sp.gov.br</a>
+            </p>
+            <p>
+                Matheus Arakaki do Nascimento —
+                <a href="mailto:matheus.nascimento253@etec.sp.gov.br">matheus.nascimento253@etec.sp.gov.br</a>
+            </p>
+            <p>
+                Ulisses Ismael da Silva —
+                <a href="mailto:ulisses.silva15@etec.sp.gov.br">ulisses.silva15@etec.sp.gov.br</a>
+            </p>
+        </div>
+
+        <div class="redes-sociais">
+      <a href="https://www.instagram.com/eletrogenese.2025/" target="_blank">
+        <img src="../Projeto_Integrado/assets/images/Instagram_img.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank">
+                <img src="../Projeto_Integrado/assets/images/Linkedin_img.png" alt="LinkedIn">
+            </a>
+      <a href="https://web.facebook.com/profile.php?id=61582767407768" target="_blank">
+                <img src="../Projeto_Integrado/assets/images/Facebook_img.png" alt="Facebook">
+            </a>
+        </div>
+
+        <hr>
+
+        <div class="copy">
+            <p>© 2025 Todos os direitos reservados.</p>
+            <p>Alameda Nothmann, 598 - Campos Elíseos, São Paulo - SP, 01216-000</p>
+        </div>
+    </footer>
+
+    <!-- ACCESSIBILITY BUTTON -->
+<button id="accessibility-btn"><img class="botaocerto" src="./assets/images/acessibilidade.png"></button>
+
+<div id="accessibility-menu">
+  <button id="increase-font">Increase Font</button>
+  <button id="decrease-font">Decrease Font</button>
+  <hr>
+  <button id="align-left">Align Left</button>
+  <button id="align-center">Center</button>
+  <button id="align-justify">Justify</button>
+  <button id="align-right">Right</button>
+  <hr>
+  <button id="reset-accessibility">Reset</button>
+</div>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
