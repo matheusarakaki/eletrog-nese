@@ -1,0 +1,27 @@
+/* ===== Duas imagens lado a lado ===== */
+.imagens-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 100px 20px;
+    flex-wrap: wrap; /* Para empilhar no celular */
+}
+
+.imagens-container img {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.imagens-container img:hover {
+    transform: scale(1.03);
+}
+
+/* Ajuste do footer */
+footer {
+    margin-top: 50px;
+}

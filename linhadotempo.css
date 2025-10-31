@@ -1,0 +1,138 @@
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f3f6fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .timeline {
+      position: relative;
+      margin: 50px auto;
+      padding: 0 40px;
+      width: 80%;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 100%;
+      background-color: #8fa5ff;
+    }
+
+    .decade {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      margin: 60px 0 30px;
+    }
+
+    .decade span {
+      background-color: #fff;
+      border: 3px solid #2f64ff;
+      color: #2f64ff;
+      font-weight: bold;
+      padding: 8px 20px;
+      border-radius: 25px;
+      display: inline-block;
+      font-size: 1.2em;
+    }
+
+    .event {
+      position: relative;
+      width: 45%;
+      background: #f0e9df;
+      border: 2px solid #d2a44c;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .event::before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      width: 18px;
+      height: 18px;
+      background-color: #d17b2b;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 3px #d17b2b;
+    }
+
+    .event.left {
+      left: 0;
+    }
+
+    .event.left::before {
+      right: -12px;
+    }
+
+    .event.right {
+      left: 55%;
+    }
+
+    .event.right::before {
+      left: -12px;
+    }
+
+    .event h3 {
+      margin: 5px 0;
+      color: #4b2907;
+    }
+
+    .event small {
+      color: #a36f1a;
+      font-weight: bold;
+    }
+
+    /* Cores por década */
+    .event.gold { border-color: #d4af37; background: #f5f0e5; }
+    .event.orange { border-color: #e48624; background: #f6eadd; }
+    .event.yellow { border-color: #e1b12c; background: #f9f4e2; }
+    .event.purple { border-color: #8e44ad; background: #f4edfa; }
+
+    /* Cartões resumo no final */
+    .summary {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 50px;
+    }
+
+    .summary-card {
+      width: 250px;
+      background: #f0e8dd;
+      border-radius: 10px;
+      border: 2px solid #d4af37;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .summary-card h4 {
+      margin: 0;
+      color: #8b5a1b;
+    }
+
+    .summary-card p {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .purple-card { border-color: #8e44ad; color: #6c3483; background: #f8f4fa; }
+
+    .timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: calc(100% - 260px); 
+  background-color: #8e44ad;
+}

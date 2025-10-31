@@ -1,0 +1,560 @@
+/* style-index.css - VERSÃO RESPONSIVA */
+
+/* Centralização do Conteúdo Inicial (Requisitado) */
+.centralizar {
+    max-width: 800px; /* Limite máximo para o texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 20px; /* Adiciona padding nas laterais em telas menores */
+    text-align: center;
+}
+
+.titulos{
+    font-size: 26px;
+    color:#964800;
+    font-weight: bold;
+}
+
+/* Imagem inicial */
+.img {
+    max-width: 75%; /* Ajuste o tamanho da imagem */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px auto;
+}
+
+/* SEÇÃO DE RECURSOS DO SITE */
+.recursos-site-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.recursos-site-container h2 {
+    font-size: 32px;
+    color: #5c3a1a;
+    margin-bottom: 40px;
+}
+
+/* Estilo para o Grid dos Cartões */
+.recursos-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Estilo dos Cartões Individuais */
+.card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ff9800;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ff6f00;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #5c3a1a;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 14px;
+    color: #8d6e63;
+    line-height: 1.5;
+}
+
+/* SEÇÃO PERÍODOS HISTÓRICOS (Ajustado para alinhamento) */
+.periodos-grid-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Container para a linha superior (1880s, 1890s, 1900s) */
+.periodos {
+    display: flex;
+    justify-content: center; /* Alinha no centro */
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Container para a linha inferior (1910s, 1920s) */
+.periodos-linha-inferior {
+    display: flex;
+    justify-content: center; /* ALINHA A LINHA INFERIOR NO CENTRO */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card Individual */
+.periodo {
+    flex: 0 0 250px; /* Largura fixa para manter o alinhamento */
+    max-width: 250px;
+    border: 2px solid #8b4513;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.2s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.periodo:hover {
+    transform: translateY(-5px);
+}
+
+/* Header: ano + badge */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+/* Ano */
+.ano {
+    font-weight: bold;
+    font-size: 16px;
+    color: #8b4513;
+}
+
+/* Badge */
+.badge {
+    background: #8b4513;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+/* Título */
+.titulo {
+    font-weight: bold;
+    margin: 6px 0;
+    font-size: 18px;
+    color: #222;
+}
+
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-items: center;
+    margin: 0 auto; /* centraliza horizontalmente */
+    max-width: 1100px; /* opcional, limita largura máxima */
+    padding: 0 15px; /* espaço interno para mobile */
+}
+.member {
+    display: flex;
+    background: #fffafa;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: 20px;
+    max-width: 450px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: justify;
+    border: 1px solid #ffd000;
+}
+
+.member:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    width: 55px;
+    height: 55px;
+    color: white;
+    font-size: 26px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+/* Cores personalizadas */
+.orange .icon { background: linear-gradient(135deg, #ff7b00, #ff9f3f); }
+.purple .icon { background: linear-gradient(135deg, #563bff, #7a63ff); }
+.green .icon { background: linear-gradient(135deg, #00a84a, #34d37e); }
+.violet .icon { background: linear-gradient(135deg, #8c3fff, #b273ff); }
+
+.info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #3c2f1b;
+}
+
+.role {
+    margin: 3px 0 10px;
+    font-weight: 600;
+    color: #a05b00;
+}
+
+.tag {
+    display: inline-block;
+    background: #fff3d2;
+    color: #b57b00;
+    font-size: 0.85em;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.desc {
+    background: #fff9ef;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    line-height: 1.5;
+    box-shadow: inset 0 -2px 0 #f2d99f;
+    color:rgb(158, 94, 34);
+}
+
+/* Texto menor */
+.elemento1 {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Cores diferentes por card */
+.tp1 { border-color: #8b4513; }
+.tp1 .ano { color: #8b4513; }
+.tp1 .badge { background: #8b4513; }
+
+.tp2 { border-color: #b23b22; }
+.tp2 .ano { color: #b23b22; }
+.tp2 .badge { background: #b23b22; }
+
+.tp3 { border-color: #c49000; }
+.tp3 .ano { color: #c49000; }
+.tp3 .badge { background: #c49000; }
+
+.tp4 { border-color: #d35400; }
+.tp4 .ano { color: #d35400; }
+.tp4 .badge { background: #d35400; }
+
+.tp5 { border-color: #6a0dad; }
+.tp5 .ano { color: #6a0dad; }
+.tp5 .badge { background: #6a0dad; }
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+
+/* Tablets (768px a 1024px) */
+@media (max-width: 1024px) {
+    .recursos-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .recursos-site-container h2 {
+        font-size: 28px;
+    }
+    
+    .periodo {
+        flex: 0 0 220px;
+        max-width: 220px;
+    }
+}
+
+/* Tablets Pequenos e Smartphones Grandes (600px a 768px) */
+@media (max-width: 768px) {
+    .centralizar {
+        padding: 0 15px;
+    }
+    
+    .img {
+        max-width: 85%;
+    }
+    
+    .recursos-site-container {
+        margin: 60px auto 30px auto;
+    }
+    
+    .recursos-site-container h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    .card h3 {
+        font-size: 16px;
+    }
+    
+    .card p {
+        font-size: 13px;
+    }
+    
+    .periodos-grid-container h2 {
+        font-size: 26px;
+    }
+    
+    .periodo {
+        flex: 0 0 200px;
+        max-width: 200px;
+        padding: 14px;
+    }
+    
+    .titulo {
+        font-size: 16px;
+    }
+    
+    .elemento1 {
+        font-size: 13px;
+    }
+}
+
+/* Smartphones (480px a 600px) */
+@media (max-width: 600px) {
+    .centralizar {
+        padding: 0 10px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    .img {
+        max-width: 90%;
+        margin: 15px auto;
+    }
+    
+    .recursos-site-container {
+        margin: 40px auto 20px auto;
+        padding: 0 15px;
+    }
+    
+    .recursos-site-container h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .recursos-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .card {
+        padding: 18px;
+        text-align: center;
+    }
+    
+    .card i {
+        font-size: 32px;
+    }
+    
+    .periodos-grid-container {
+        padding: 0 15px;
+    }
+    
+    .periodos-grid-container h2 {
+        font-size: 22px;
+    }
+    
+    .periodo {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .periodos, .periodos-linha-inferior {
+        gap: 15px;
+    }
+}
+
+.project-info {
+  background: linear-gradient(135deg, #ff7b00, #ff5200);
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: #fff;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Cabeçalho */
+.project-info .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.project-info .icon {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.project-info .icon i {
+  color: #fff;
+  width: 22px;
+  height: 22px;
+}
+
+.project-info h2 {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+/* Colunas */
+.info-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.column h3 {
+  font-size: 1em;
+  font-weight: 700;
+  color: #fffde9;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column ul li {
+  position: relative;
+  margin: 6px 0;
+  padding-left: 18px;
+  font-size: 0.95em;
+}
+
+.column ul li::before {
+  content: "•";
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.column ul li i {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* Citação inferior */
+.quote {
+  margin-top: 25px;
+  text-align: center;
+  font-style: italic;
+  color: #fff7d0;
+  font-size: 0.9em;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+  .info-columns {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Smartphones Pequenos (até 480px) */
+@media (max-width: 480px) {
+    .centralizar {
+        padding: 0 8px;
+    }
+    
+    h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .img {
+        max-width: 95%;
+    }
+    
+    .recursos-site-container {
+        margin: 30px auto 15px auto;
+        padding: 0 10px;
+    }
+    
+    .recursos-site-container h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+    
+    .card h3 {
+        font-size: 15px;
+    }
+    
+    .card p {
+        font-size: 12px;
+    }
+    
+    .periodos-grid-container {
+        padding: 0 10px;
+    }
+    
+    .periodos-grid-container h2 {
+        font-size: 20px;
+    }
+    
+    .periodo {
+        padding: 12px;
+    }
+    
+    .titulo {
+        font-size: 15px;
+    }
+    
+    .elemento1 {
+        font-size: 12px;
+    }
+    
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5;
+    }}

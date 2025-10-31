@@ -1,0 +1,142 @@
+/* SubStyle1900.css */
+
+/* --- CORES TEMA: 1900s (TP3 - Amarelo Ouro: #c49000) --- */
+
+/* CONTAINER PRINCIPAL DA PÁGINA DE TÓPICO */
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* SEÇÃO PRINCIPAL (TEXTO) */
+.section-topic {
+    flex: 1 1 60%;
+    min-width: 300px;
+}
+
+/* Caixa de Texto do Tópico */
+.caixadetexto-topic {
+    background-color: #fffaf5; 
+    /* Cor de Borda Principal: #c49000 */
+    border: 2px solid #c49000;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.caixadetexto-topic h2 {
+    font-size: 28px;
+    /* Cor Principal do Título: #c49000 */
+    color: #c49000; 
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.caixadetexto-topic p {
+    font-size: 16px;
+    color: #5d4037;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.caixadetexto-topic footer {
+    font-size: 14px;
+    color: #8d6e63;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* Faixa de Ano (1900s • 1903) */
+.faixa-tema {
+    /* Cor da Faixa (Destaque): #ffea7f */
+    background-color: #ffea7f;
+    /* Cor do texto: Para contraste */
+    color: #5c3a1a; 
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Linha Divisória */
+.linha-tema {
+    border: 0;
+    height: 2px;
+    /* Cor da Linha: #c49000 */
+    background-color: #c49000;
+    margin: 15px 0;
+}
+
+/* ASIDE (GALERIA HISTÓRICA) */
+aside {
+    flex: 0 1 300px;
+}
+
+.caixa-imagem {
+    /* Cor da Borda Principal: #c49000 */
+    border: 2px solid #c49000; 
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 120px;
+}
+
+.caixa-imagem h3 {
+    /* Cor do Título: #c49000 */
+    color: #c49000; 
+    margin-top: 0;
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.imagem-legenda {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.imagem-legenda img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.legenda {
+    /* Cor do Fundo da Legenda (Destaque): #ffea7f */
+    background-color: #ffea7f; 
+    color: #333;
+    font-size: 0.9em;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Media Query para Responsividade */
+@media (max-width: 900px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .section-topic, aside {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .caixa-imagem {
+        position: static;
+        margin-top: 20px;
+    }
+}
